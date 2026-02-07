@@ -584,6 +584,29 @@ nav {
 
 /* Hero Card Animations */
 
+/* Entrance Animations */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: rotate(-16deg) translateX(-100px) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-16deg) translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: rotate(12deg) translateX(100px) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(12deg) translateY(0);
+  }
+}
+
 /* Desktop Animation */
 @keyframes floatLeftDesktop {
   0%,
@@ -641,30 +664,42 @@ nav {
 /* Desktop */
 @media (min-width: 1025px) {
   .left-card {
-    animation: floatLeftDesktop 6s ease-in-out infinite;
+    animation:
+      slideInLeft 0.8s ease-out 0.3s both,
+      floatLeftDesktop 6s ease-in-out 1.1s infinite;
   }
   .right-card {
-    animation: floatRightDesktop 5s ease-in-out infinite;
+    animation:
+      slideInRight 0.8s ease-out 0.5s both,
+      floatRightDesktop 5s ease-in-out 1.3s infinite;
   }
 }
 
 /* Tablet */
 @media (max-width: 1024px) {
   .left-card {
-    animation: floatLeftTablet 6s ease-in-out infinite;
+    animation:
+      slideInLeft 0.8s ease-out 0.3s both,
+      floatLeftTablet 6s ease-in-out 1.1s infinite;
   }
   .right-card {
-    animation: floatRightTablet 5s ease-in-out infinite;
+    animation:
+      slideInRight 0.8s ease-out 0.5s both,
+      floatRightTablet 5s ease-in-out 1.3s infinite;
   }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .left-card {
-    animation: floatMobile 6s ease-in-out infinite;
+    animation:
+      fadeIn 0.8s ease-out 0.3s both,
+      floatMobile 6s ease-in-out 1.1s infinite;
   }
   .right-card {
-    animation: floatMobile 5s ease-in-out infinite;
+    animation:
+      fadeIn 0.8s ease-out 0.5s both,
+      floatMobile 5s ease-in-out 1.3s infinite;
   }
 }
 

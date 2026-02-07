@@ -129,13 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(item);
     });
     
-    const heroCards = document.querySelectorAll('.hero-card');
-    heroCards.forEach((card, index) => {
-        const direction = index === 0 ? 'fade-in-left' : 'fade-in-right';
-        card.classList.add('animate-on-scroll', direction, `delay-${(index + 1) * 200}`);
-        observer.observe(card);
-    });
-    
     const approachTabs = document.querySelectorAll('.approach-tab');
     approachTabs.forEach((tab, index) => {
         tab.classList.add('animate-on-scroll', 'fade-in-left', `delay-${(index + 1) * 100}`);

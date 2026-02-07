@@ -11,14 +11,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <nav class="container">
         <div>
-          <a href="#"><img class="logo" src="/assets/Logo.svg" alt="logo" /></a>
+          <a href="#"><img class="logo" src="assets/Logo.svg" alt="logo" /></a>
         </div>
-      <!-- mobile menu -->
+        <!-- mobile menu -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle" />
         <label for="nav-toggle" class="nav-burger">
           <span></span>
@@ -36,7 +43,59 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-box">
+            <!-- Left Column: Chart Card -->
+            <div class="hero-card left-card">
+              <h3>Total Incomes</h3>
+              <div class="chart-bars">
+                <div class="bar" style="height: 40%"><span>Tue</span></div>
+                <div class="bar" style="height: 60%"><span>Wed</span></div>
+                <div class="bar" style="height: 45%"><span>Thu</span></div>
+                <div class="bar active" style="height: 80%">
+                  <span>Fri</span>
+                </div>
+                <div class="bar" style="height: 25%"><span>Sat</span></div>
+                <div class="bar" style="height: 65%"><span>Sun</span></div>
+              </div>
+            </div>
+
+            <!-- Center Column: Content -->
+            <div class="hero-content">
+              <div class="hero-badge">
+                <img src="assets/image 6.svg" alt="amazon" />
+                <span
+                  >Your Full-Service
+                  <span class="highlight-text">Amazon Partner</span></span
+                >
+              </div>
+              <h1>
+                Turn Your Amazon Struggles into Success—Save Time,
+                <span class="highlight-text">Maximize Profits!</span>
+              </h1>
+              <button class="cta-btn">Book a Free Consultation</button>
+            </div>
+
+            <!-- Right Column: Users Card -->
+            <div class="hero-card right-card">
+              <div class="user-avatars">
+                <img src="assets/image-1.png" alt="User 1" />
+                <img src="assets/image-2.png" alt="User 2" />
+                <img src="assets/image.png" alt="User 3" />
+              </div>
+              <div class="user-stats">
+                <h3>45k+ Users</h3>
+                <p><i class="fa-solid fa-star"></i> 4.7 Rating</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+    </main>
     <footer></footer>
   </body>
 </html>

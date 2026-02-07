@@ -1,0 +1,14 @@
+/* Global colors */
+:root {
+  --primary-color: #FFA500;
+  --secondary-color: #151515;
+  --white-color: #FFFFFF;
+}
+
+/* Global font */
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}

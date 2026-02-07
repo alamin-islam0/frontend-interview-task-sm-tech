@@ -1087,7 +1087,7 @@ nav {
 
 .approach-content .section-title {
   margin-bottom: 40px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 56px;
 }
 

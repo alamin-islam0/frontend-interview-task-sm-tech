@@ -35,17 +35,19 @@
         <!-- desktop menu -->
         <div class="nav-links">
           <ul>
-            <li><a class="oswald" href="#">Home</a></li>
-            <li><a class="oswald" href="#">About</a></li>
-            <li><a class="oswald" href="#">Contact</a></li>
-            <button class="cta-btn">Book a Free Consultation</button>
+            <li><a class="oswald" href="#home">Home</a></li>
+            <li><a class="oswald" href="#about">About</a></li>
+            <li><a class="oswald" href="#contact">Contact</a></li>
+            <button class="cta-btn scroll-to-contact">
+              Book a Free Consultation
+            </button>
           </ul>
         </div>
       </nav>
     </header>
     <main>
       <!-- Hero Section -->
-      <section class="hero-section">
+      <section id="home" class="hero-section">
         <div class="hero-container">
           <div class="hero-box">
             <!-- Left Column: Chart Card -->
@@ -76,7 +78,9 @@
                 Turn Your Amazon Struggles into Success—Save Time,
                 <span class="highlight-text">Maximize Profits!</span>
               </h1>
-              <button class="cta-btn">Book a Free Consultation</button>
+              <button class="cta-btn scroll-to-contact">
+                Book a Free Consultation
+              </button>
             </div>
 
             <!-- Right Column: Users Card -->
@@ -119,7 +123,7 @@
       </section>
       <!-- End Statistics Section -->
       <!-- Our Story Section -->
-      <section class="container our-story-section">
+      <section id="about" class="our-story-section">
         <div class="title-badge">
           <img src="assets/image 6.svg" alt="amazon" />
           <span>Our <span class="highlight-text">Story</span></span>
@@ -139,7 +143,9 @@
             markets —without wasting time or money. 🎯 Let’s turn your struggles
             into scalable success!
           </p>
-          <button class="cta-btn">Book a Free Strategy Call</button>
+          <button class="cta-btn scroll-to-contact">
+            Book a Free Strategy Call
+          </button>
         </div>
       </section>
       <!-- End Our Story Section -->
@@ -161,7 +167,7 @@
             </p>
 
             <button
-              class="cta-btn"
+              class="cta-btn scroll-to-contact"
               style="box-shadow: 2px 2px 0px 1.4px var(--white-color)"
             >
               Book a Free Strategy Call
@@ -378,7 +384,7 @@
             </div>
 
             <button
-              class="cta-btn approach-btn"
+              class="cta-btn approach-btn scroll-to-contact"
               style="box-shadow: 2px 2px 0px 1.4px var(--white-color)"
             >
               Book a Free Strategy Call
@@ -532,7 +538,9 @@
               </div>
             </div>
           </div>
-          <button class="cta-btn growth-business-btn">Talk to an Expert</button>
+          <button class="cta-btn growth-business-btn scroll-to-contact">
+            Talk to an Expert
+          </button>
         </div>
       </section>
 
@@ -666,12 +674,14 @@
             </div>
           </div>
 
-          <button class="cta-btn growth-business-btn">Talk to an Expert</button>
+          <button class="cta-btn growth-business-btn scroll-to-contact">
+            Talk to an Expert
+          </button>
         </div>
       </section>
 
       <!-- ================= Contact Section ================= -->
-      <section class="contact-section">
+      <section id="contact" class="contact-section">
         <div class="container">
           <div class="contact-top">
             <div class="title-badge">
@@ -767,5 +777,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="js/index.js"></script>
   </body>
 </html>

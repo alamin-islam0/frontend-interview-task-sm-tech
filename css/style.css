@@ -413,6 +413,12 @@ nav {
   .right-card {
     transform: rotate(0deg);
   }
+  .hero-section{
+    padding: 40px 0px 20px 0px;
+  }
+  .hero-box{
+    gap: 40px;
+  }
 }
 
 /* Statistics Section */
@@ -490,6 +496,14 @@ nav {
     height: auto; 
     min-height: 140px;
   }
+  .stat-container h1{
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .stat-container p{
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 /* Our Story Section */
@@ -533,7 +547,15 @@ nav {
 
 /* Responsive Our Story */
 @media (max-width: 768px) {
+    .our-story-section{
+        padding-top: 0px;
+        padding-bottom: 60px;
+    }
   .our-story-section h2 {
     font-size: 32px;
+  }
+  .our-story-section p{
+    font-size: 16px;
+    line-height: 24px;
   }
 }

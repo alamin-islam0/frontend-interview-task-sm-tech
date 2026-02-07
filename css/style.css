@@ -5,10 +5,120 @@
   --white-color: #FFFFFF;
 }
 
-/* Global font */
-.oswald {
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Responsive Layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 768px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Desktop Breakpoint */
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Global Section Heading Style */
+.section-title {
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-style: normal;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+/* Global Button Style */
+.cta-btn {
+  padding: 16px 32px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  border-radius: 39px;
+  border: none;
+  box-shadow: 2px 2px 0px 1.4px var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: var(--secondary-color);
+  box-shadow: 2px 2px 0px 1.4px var(--primary-color);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links ul li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Helper for the orange active link seen in reference */
+.nav-links a.active {
+  color: var(--primary-color);
 }

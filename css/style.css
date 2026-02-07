@@ -823,3 +823,146 @@ nav {
     padding: 14px 20px;
   }
 }
+
+/* SERVICES */
+.services-section {
+  padding: 100px 16px;
+  background-color: var(--white-color);
+}
+
+.service-top {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.service-top .badge-icon-box {
+  margin: 0 auto;
+}
+
+.service-top .section-title {
+  margin-top: 16px;
+  color: var(--secondary-color);
+}
+
+.service-desc {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4b4b4b;
+  margin-top: 16px;
+}
+
+/* Service Grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Service Card */
+.service-card {
+  background-color: var(--white-color);
+  border: 1px solid #ececec;
+  border-radius: 16px;
+  padding: 40px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-color: var(--primary-color);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.card-header h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--primary-color);
+  max-width: 70%;
+  line-height: 1.4;
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.vertical-line {
+  width: 3px;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, var(--primary-color), #ffd9a3);
+  align-self: stretch; 
+}
+
+/* List Styling */
+.card-body ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-body li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #4b4b4b;
+  line-height: 1.5;
+}
+
+.card-body li img {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.card-body li strong {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* Responsive Services */
+@media (max-width: 1024px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .service-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0px;
+  }
+
+  .card-header h3 {
+    font-size: 18px;
+  }
+
+  .card-body li {
+    font-size: 15px;
+  }
+}
